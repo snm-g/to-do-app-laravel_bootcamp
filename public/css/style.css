@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.title-div {
+    background-color: #ffc107;
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.title-div h2 {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.navigation-div {
+    display: flex;
+    width: 100%;
+    background-color: #d39e00;
+    border-bottom: 2px solid #5a5c68;
+}
+.navigation-item {
+    flex: 1;
+
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.navigation-item:hover,
+.navigation-item.active {
+    background-color: #343a40;
+}
+
+.tables-div {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.button-add-div {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.button-add {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.table-div {
+    border-radius: 10px;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina espacios dobles entre bordes */
+}
+.table thead tr {
+    background-color: #5a5c68;
+    text-align: left;
+    color: white;
+}
+.table th {
+    padding: 15px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+.table td {
+    padding: 15px;
+    border-bottom: 1px solid #4b4d55;
+}
