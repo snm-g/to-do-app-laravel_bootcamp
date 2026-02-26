@@ -17,7 +17,12 @@ class TagController extends Controller
     {
         $request->validate(['name' => 'required']);
         $tag = Tag::create($request->all());
-        return response()->json($tag, 201);
+        
+        // Cambia el return por este:
+        return response()->json([
+            'message' => 'Etiqueta creada exitosamente',
+            'data' => $tag
+        ], 201);
     }
 
     public function show($id)
@@ -32,7 +37,12 @@ class TagController extends Controller
         if (!$tag) return response()->json(['error' => 'No encontrado'], 404);
         
         $tag->update($request->all());
-        return response()->json($tag, 200);
+        
+        // Cambia el return por este:
+        return response()->json([
+            'message' => 'Etiqueta actualizada',
+            'data' => $tag
+        ], 200);
     }
 
     public function destroy($id)
